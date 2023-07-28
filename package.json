@@ -1,10 +1,13 @@
 {
-  "name": "dall-e-api",
+  "name": "R.O.O.T-E",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage":"https://twrgit7.github.io/R.O.O.T-E",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -14,6 +17,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3"
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "@vitejs/plugin-react": "^2.2.0",
